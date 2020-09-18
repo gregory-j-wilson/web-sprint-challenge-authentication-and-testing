@@ -11,10 +11,10 @@ module.exports = {
 //   return db("users").select("id", "username").orderBy("id");
 // }
 
-// function findBy(filter) {
-//   return db("users").where(filter).orderBy("id");
+function findBy(filter) {
+  return db("users").where(filter).orderBy("id");
   
-// }
+}
 
 function findById(id) {
     return db("users").where({ id }).first();
